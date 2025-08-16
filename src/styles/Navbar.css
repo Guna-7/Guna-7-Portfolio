@@ -1,0 +1,107 @@
+/* Cosmic Navbar - Enhanced Glass & Glow */
+.navmenu {
+  background: rgb(12, 12, 12);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.navmenu::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(110, 69, 226, 0.15) 0%, transparent 50%, rgba(255, 126, 95, 0.15) 100%);
+  z-index: -1;
+}
+
+.navmenu ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.navmenu li {
+  position: relative;
+}
+
+.navmenu a {
+  color: var(--cosmic-text-secondary);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.navmenu a:hover {
+  color: white;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+.navmenu a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  transition: width 0.35s ease-in-out;
+  border-radius: 3px;
+}
+
+.navmenu a:hover::after {
+  width: 100%;
+}
+
+.navmenu a.active {
+  color: white;
+}
+
+.navmenu a.active::after {
+  width: 100%;
+  background: var(--cosmic-neon);
+}
+
+/* Bottom Glow Effect */
+.navmenu::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--cosmic-neon), transparent);
+  box-shadow: 0 0 8px var(--cosmic-neon);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navmenu { padding: 1rem 2rem; }
+  .navmenu ul { gap: 2rem; }
+}
+
+@media (max-width: 768px) {
+  .navmenu ul { gap: 1.5rem; }
+  .navmenu a { font-size: 1rem; }
+}
+
+@media (max-width: 576px) {
+  .navmenu { padding: 0.8rem 1.5rem; }
+  .navmenu ul { gap: 1.2rem; margin-left: 10px; }
+  .navmenu a { font-size: 0.95rem; }
+}
