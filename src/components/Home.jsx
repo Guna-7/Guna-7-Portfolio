@@ -270,50 +270,6 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Project 3 */}
-    <div className="project-card">
-      <div className="project-image todo-app-image"></div>
-      <div className="project-content">
-      
-        <h3 className='reveal'>Todo App</h3>
-        <p className="project-description">
-         A lightweight and responsive task management application built with React and Vite. Allows users to create, edit, and delete tasks with real-time UI updates and persistent storage using localStorage. Designed with a clean, minimal interface for a distraction-free experience.
-        </p>
-        <div className="project-tech">
-          <span className="tech-pill">React</span>
-          <span className="tech-pill">Vite</span>
-          <span className="tech-pill">HTML</span>
-          <span className="tech-pill">CSS</span>
-          <span className="tech-pill">JavaScript</span>
-        </div>
-        <div className="project-links">
-          <a href="https://bhuvanesh-react-todo.netlify.app/" target="_blank" rel="noopener noreferrer" className="project-link link-primary">Live Demo</a>
-          <a href="https://github.com/bhuvanesh2207/React-Todo" target="_blank" rel="noopener noreferrer" className="project-link link-secondary">View Code</a>
-        </div>
-      </div>
-    </div>
-
-    {/* Project 4 */}
-    <div className="project-card">
-      <div className="project-image"></div>
-      <div className="project-content">
-        <h3 className='reveal'>Generative AI Chatbot</h3>
-        <p className="project-description">
-           Conversational AI chatbot using LangChain orchestration and LLaMA 
-          model for natural language understanding with context memory.
-
-          	The project Is designed to create advanced, context-aware chatbot interactions for services like customer support, knowledge retrieval. 
-        </p>
-        <div className="project-tech">
-          <span className="tech-pill">LangChain</span>
-          <span className="tech-pill">HuggingFace</span>
-          <span className="tech-pill">Python</span>
-        </div>
-        <div className="project-links">
-          <a href="#" className="project-link link-primary">View Code</a>
-        </div>
-      </div>
-    </div>
       {/* Project 4 */}
     <div className="project-card">
       <div className="project-image"></div>
