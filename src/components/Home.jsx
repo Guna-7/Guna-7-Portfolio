@@ -73,8 +73,8 @@ export default function Home() {
   <li><strong>Name:</strong> Guna Dhanasekaran</li>
   <li><strong>Email:</strong> dgunadhana@gmail.com</li>
   <li><strong>Phone:</strong> +91 7358808840</li>
-  <li><strong>Address:</strong> Hosur, Tamil Nadu</li>
-  <li><strong>Degree:</strong> B.E – Computer Science Engineering</li>
+  <li><strong>Address:</strong> Hosur, TamilNadu</li>
+  <li><strong>Degree:</strong> B.E – Computer Science & Engineering</li>
 </ul>
 
         </section>
